@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y nano && \
 
 COPY . .
 
+COPY nginx.conf /etc/nginx/conf.d/
+
 COPY entrypoint.sh .
 RUN chmod +x /djangoapp/entrypoint.sh
 
