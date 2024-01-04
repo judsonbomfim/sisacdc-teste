@@ -104,6 +104,7 @@ def index(request):
     yearSimsValuesE = json.dumps(yearSimsReport['sim'].tolist())
     yearSimsDates = json.dumps([month.strftime('%Y-%m') for month in yearSimsReport.index])    
     
+    
     # OPERATOR
     # --- Week
     weekOperReport = weekDf.groupby(['order_date','operator']).size().reset_index(name='countOperWeek')
