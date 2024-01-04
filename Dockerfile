@@ -15,4 +15,3 @@ COPY entrypoint.sh .
 RUN chmod +x /djangoapp/entrypoint.sh
 
 EXPOSE 8000
-
